@@ -1,0 +1,114 @@
+html{
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+	background-size:cover;
+	background-attachment:fixed;
+}
+#box{
+    border: 5px solid;
+    border-radius: 10px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    background: rgba(255, 255, 255, 0.5);
+    width: 650px;
+    text-align: center;
+    font-family: sans-serif;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+}
+#title{
+    color: black;
+	font-size: 40px;
+}
+input[type="text"] {
+    border:none;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    border-style: outbset;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 20px;
+    outline: none !important;
+    background:
+        linear-gradient(90deg, #0051ff, #0051ff) center bottom/0 0.15em no-repeat,
+        linear-gradient(90deg, #ccc, #ccc) left bottom/100% 0.15em no-repeat,
+        linear-gradient(90deg, #fafafa, #fafafa) left bottom/100% no-repeat;
+    transition: background-size 0.3s ease;
+}
+.entries input:focus {
+    background-size: 100% 0.15em, 100% 0.1em, 100%;
+}
+::placeholder{
+    color: #ccc ;
+}
+#firstName, #lastName, #gmail{
+    width:180px;
+}
+#gmail{
+    margin-right: 0px;
+}
+#gmailDomain{
+    border:2px solid #ccc;
+    background-color: white;
+    display: inline;
+    border-style: outbset;
+    border-radius: 3px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    font-size: 20px;
+}
+#verification{
+    display: inline-block;
+    font-weight: bold;
+}
+input[type='checkbox']{
+    width:12px;
+    height:12px;
+}
+.verificationAll{
+    border: 2px solid white;
+    width:600px;
+    margin:auto;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.signInButton{
+    margin-bottom: 10px;
+    background-color: #87cefa;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    border-bottom: 7px outset #70aacf;
+    color:white;
+    padding: 10px;
+}
+.signInButton:hover{
+    background-color: #78b7de;
+    border-bottom: 6px outset #70aacf;
+    -webkit-transform: translateY(1px);
+	transform: translateY(1px);
+}
+.signInButton:active{
+    background-color: #78b7de;
+    border-bottom: 2px outset #70aacf;
+    -webkit-transform: translateY(5px);
+	transform: translateY(5px);
+}
+/*@keyframes shake{
+    0%{transform: translateX(0px);}
+    25%{transform: translateX(5px);}
+    50%{transform: translateX(-10px);}
+    75%{transform: translateX(5px);}
+    100%{transform: translateX(0px);}
+}*/
